@@ -1,0 +1,38 @@
+.App{
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    align-items: center;
+
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+}
+
+.square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+}
+
+.square:not(:last-child) {
+  border-bottom: 1px solid black;
+}
+
+.row:not(:last-child) {
+    border-right: 1px solid black;
+  }
